@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.product-type {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.desc {
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+}
+
+.add-to-cart {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border: 0;
+}
+
+.add-to-cart:hover, .add-to-cart:focus {
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+@media (max-width: 450px) {
+  .thumbnail {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.product-card {
+  width: 35rem;
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
+  border-radius: 0.5rem;
+  -webkit-margin-before: 10rem;
+          margin-block-start: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-desc {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .product-card {
+    width: 90%;
+    -webkit-margin-before: 2rem;
+            margin-block-start: 2rem;
+    display: block;
+  }
+}
+/* .price-now,.price-before {
+    display: inline-flex;
+} */
+.prices {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.price-now {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+}
+
+.price-before {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
